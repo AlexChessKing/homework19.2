@@ -10,11 +10,6 @@ public class WordsChecker {
     }
 
     public boolean hasWord(String word) {
-        for (String s : set) {
-            if (s.hashCode() == word.hashCode()) {
-                return true;
-            }
-        }
-        return false;
+        return set.contains(word);
     }
 }
